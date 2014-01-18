@@ -30,9 +30,6 @@ def count_neighbors(grid):
     grid[1:-1,1:-1][birth | survive] = 1
     return grid
 
-print("Starting grid:")
-print(grid)
-
 for i in range(10): 
 	count_neighbors(grid)
 	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
